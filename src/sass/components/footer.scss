@@ -1,0 +1,98 @@
+.footer {
+  background-color: #0A0808;
+}
+
+.footer__wrapper {
+  padding: 70px 0 105px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer__text {
+  width: 207px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  opacity: 0.7;
+  margin-top: 9px;
+}
+
+.footer__social-label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  margin-top: 25px;
+}
+
+.footer__social-wrap {
+  margin-top: 8px;
+}
+
+.footer__input {
+  width: 100%;
+  padding: 7px 32px;
+  opacity: 0.5;
+  border: 2px solid #D64374;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #0A0808;
+  color: #FFFFFF;
+  margin-right: -3px;
+  z-index: -1;
+
+  @media (min-width: 768px) {
+    padding: 16px 32px;
+  }
+}
+
+.footer__label {
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+}
+
+.footer__input::placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  opacity: 0.6;
+
+}
+
+.footer__form {
+  display: flex;
+  align-items: center;
+  margin-top: 13px;
+}
+
+.footer__button {
+  z-index: 1;
+}
+
+.footer__newsletter {
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+}
+
+.footer__newsletter-title{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+
+  @media (max-width: 1024px) {
+    margin-top: 50px;
+  }
+}
+
+.footer__pay-list {
+  margin-top: 15px;
+}

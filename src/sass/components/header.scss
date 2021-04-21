@@ -1,0 +1,56 @@
+header {
+  background-color: $bg-color-pink;
+}
+
+.header__wrapper {
+  padding-bottom: 10px;
+}
+
+.header__wrapper-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (min-width: 1024px) {
+    align-items: center;
+  }
+}
+
+.header__promo {
+  margin-top: 37px;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  width: 30px;
+
+  @media (min-width: 1024px) {
+    margin-top: 0;
+    width: 60%;
+  }
+}
+
+.header__nav-toggle {
+  display: block;
+  outline: none;
+  border: none;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.header__button {
+  margin-top: 25px;
+
+  @media (min-width: 1024px) {
+    margin-top: 0;
+  }
+}
+
+
+
+

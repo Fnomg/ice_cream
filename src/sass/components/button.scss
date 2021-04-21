@@ -1,0 +1,29 @@
+.button {
+  display: inline-block;
+  color: $btn-text-color;
+  background-color: $btn-color;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 6px 23px;
+  line-height: 20px;
+
+  @media (min-width: 768px) {
+    padding: 14px 50px;
+    line-height: 22px;
+  }
+
+  &--form {
+
+
+    @media (min-width: 768px) {
+      padding: 29px 46px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+    }
+  }
+}
+
