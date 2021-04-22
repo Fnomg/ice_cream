@@ -34,7 +34,10 @@
 
 .product-list__item {
   margin-left: 15px;
+  cursor: pointer;
+}
 
+.product__link {
   &--active {
     color: #000000;
     opacity: 1;

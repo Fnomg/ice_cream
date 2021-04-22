@@ -11,7 +11,7 @@
 </head>
 <script src="js/script.js" defer></script>
 <body>
-<header class="header container">
+<header class="header container" id="home">
   <div class="header__wrapper">
     <div class="header__wrapper-nav">
       <img class="header__logo" src="./img/logo.png" alt="logo" width="79" height="79">
@@ -23,24 +23,26 @@
         </button>
         <div class="header__main-nav nav">
           <ul class="nav">
-            <li class="nav__item">
-              <a href="#" class="nav__link nav__link--active">Home</a>
+            <li class="nav__item ">
+              <a href="#home" class="nav__link nav__link--active">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Product</a>
+              <a href="#product" class="nav__link">Product</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Pricing</a>
+              <a href="#product" class="nav__link">Pricing</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Testimonials</a>
+              <a href="#testimonials" class="nav__link">Testimonials</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Contact Us</a>
+              <a href="#contact" class="nav__link">Contact Us</a>
             </li>
           </ul>
         </div>
-
+        <a class="nav__arrow" href="#home">
+          <img src="./img/home.svg" alt="Home" class="nav__arrow-home">
+        </a>
       </nav>
       <a class="header__button button" href="#">Buy Now</a>
     </div>
@@ -58,6 +60,11 @@
 <!--end header-->
 
 <main>
+  <aside class="pop-up">
+    <div class="pop-up__wrapper">
+
+    </div>
+  </aside>
   <section class="advantages container">
     <div class="advantages__wrapper">
       <div class="advantages__item">
@@ -93,15 +100,15 @@
 
   <section class="product container">
     <div class="product__wrapper">
-      <h2 class="product__title">Our Product</h2>
+      <h2 class="product__title" id="product">Our Product</h2>
       <nav class="product__nav">
         <ul class="product-list">
-          <li class="product-list__item product-list__item--active"><a href="#">ICE CREAM</a></li>
-          <li class="product-list__item"><a href="#">CAYENNE CHOCOLATE</a></li>
-          <li class="product-list__item"><a href="#">CAKE BATTER</a></li>
-          <li class="product-list__item"><a href="#">CANDY CANE</a></li>
-          <li class="product-list__item"><a href="#">PLATTERS</a></li>
-          <li class="product-list__item"><a href="#">DESSERT</a></li>
+          <li class="product-list__item"><a class="product__link product__link--active">ICE CREAM</a></li>
+          <li class="product-list__item"><a class="product__link">CAYENNE CHOCOLATE</a></li>
+          <li class="product-list__item"><a class="product__link">CAKE BATTER</a></li>
+          <li class="product-list__item"><a class="product__link">CANDY CANE</a></li>
+          <li class="product-list__item"><a class="product__link">PLATTERS</a></li>
+          <li class="product-list__item"><a class="product__link">DESSERT</a></li>
         </ul>
       </nav>
       <div class="product__content">
@@ -148,7 +155,7 @@
     </div>
   </section>
 
-  <section class="review container">
+  <section class="review container" id="testimonials">
     <div class="review__wrapper">
       <img class="review__img" src="./img/prod4.png" alt="ice cream">
       <div class="review__content">
@@ -213,7 +220,7 @@
     </div>
   </section>
 
-  <section class="help container">
+  <section class="help container" id="contact">
     <div class="help__wrapper">
       <h2 class="help__title">Have Question in Mind? Let us help you</h2>
       <form action="" class="help__form">
