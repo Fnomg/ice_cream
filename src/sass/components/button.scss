@@ -15,9 +15,19 @@
     line-height: 22px;
   }
 
+  &--small {
+
+    padding: 6px 15px;
+    line-height: 22px;
+
+
+    @media (min-width: 1024px) {
+      padding: 14px 50px;
+      line-height: 22px;
+    }
+  }
+
   &--form {
-
-
     @media (min-width: 768px) {
       padding: 29px 46px;
       font-weight: 500;

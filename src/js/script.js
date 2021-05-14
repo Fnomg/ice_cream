@@ -24,5 +24,20 @@ product.addEventListener('click', function (e){
     product.querySelector('.product__link--active').classList.remove('product__link--active')
     e.target.classList.add('product__link--active')
   }
-})
+});
+
+
+let buyButtons = document.querySelectorAll('.button--buy')
+let popUp = document.querySelector('.pop-up')
+
+for (let buyButton of buyButtons) {
+  buyButton.addEventListener('click', (event) => {
+      popUp.style = 'display: flex'
+      window.addEventListener('click', function (e){
+        if (e.target === popUp) {
+          popUp.style = 'display: none'
+        }
+      })
+  } )
+}
 

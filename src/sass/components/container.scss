@@ -1,5 +1,4 @@
 .container {
-
   padding: 0 calc(50% - 95%/2);
 
   @media (min-width: 1024px) {
@@ -10,27 +9,19 @@
     padding: 0 calc(50% - 1260px/2);
   }
 
-  //@media (min-width: 375px) {
-  //  padding: 0 calc(50% - 350px/2);
-  //}
-  //
-  //@media (min-width: 425px) {
-  //  padding: 0 calc(50% - 400px/2);
-  //}
-  //
-  //@media (min-width: 525px) {
-  //  padding: 0 calc(50% - 500px/2);
-  //}
-  //
-  //@media (min-width: 667px) {
-  //  padding: 0 calc(50% - 647px/2);
-  //}
-  //
-  //@media (min-width: 1024px) {
-  //  padding: 0 calc(50% - 800px/2);
-  //}
-  //
-  //@media (min-width: 1400px) {
-  //  padding: 0 calc(50% - 1260px/2);
-  //}
+  &--small {
+
+    width: 280px;
+    padding: 0 calc(50% - 97%/2);
+
+    @media (min-width: 768px) {
+      width: 500px;
+      padding: 0 calc(50% - 95%/2);
+    }
+
+    @media (min-width: 1024px) {
+      width: 827px;
+      padding: 0 calc(50% - 95%/2);
+    }
+  }
 }

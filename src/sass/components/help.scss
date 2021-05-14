@@ -40,6 +40,7 @@
   width: 100%;
   font-size: 18px;
   line-height: 18px;
+  outline: none;
 
   @media (min-width: 768px) {
     width: 637px;
@@ -59,4 +60,9 @@
   @media (max-width: 1024px) {
     width: 80%;
   }
+}
+
+.help__input:hover,
+.help__input:focus{
+  background-color: $input-hover;
 }
